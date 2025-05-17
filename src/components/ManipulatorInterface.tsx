@@ -229,6 +229,8 @@ export default function ManipulatorInterface ({
             </Box>
           </Paper>
 
+          {/* Progress Bar */}
+
           <Paper elevation={3} sx={{ p: 3 }}>
             <Typography variant='h6' gutterBottom>
               Animation Speed
@@ -248,22 +250,7 @@ export default function ManipulatorInterface ({
           </Paper>
         </Grid>
 
-        {/* <Grid item xs={12} md={4}>
-          <Paper elevation={3} sx={{ p: 3 }}>
-            <Typography variant='h6' gutterBottom align='center'>
-              Manipulator Grid
-            </Typography>
-            <ManipulatorGrid
-              position={{ x: 0, y: 0 }}
-              samples={[
-                { x: 2, y: 5, collected: false },
-                { x: 6, y: 3, collected: false },
-                { x: 2, y: 9, collected: false }
-              ]}
-              holdingSample={false}
-            />
-          </Paper>
-        </Grid> */}
+        {/* Command History */}
 
         <Grid item xs={12}>
           <Paper elevation={3} sx={{ p: 3 }}>
@@ -304,6 +291,7 @@ export default function ManipulatorInterface ({
         open={snackbarOpen}
         autoHideDuration={6000}
         onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }} // 👉 bu yer muhim!
       >
         <Alert
           onClose={handleCloseSnackbar}

@@ -289,7 +289,7 @@ export default function ManipulatorInterface ({
 
       <Snackbar
         open={snackbarOpen}
-        autoHideDuration={6000}
+        autoHideDuration={3000}
         onClose={handleCloseSnackbar}
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }} // 👉 bu yer muhim!
       >
